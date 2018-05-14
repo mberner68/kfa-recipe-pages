@@ -199,7 +199,7 @@ public partial class SimpleBlog29 : System.Web.UI.MasterPage
 
     private double GetItemsPerPage()
     {
-        int i = 5;
+        int i = 10;
         try
         {
             i = Convert.ToInt32(MaxPerPage.Value);
@@ -227,14 +227,14 @@ public partial class SimpleBlog29 : System.Web.UI.MasterPage
         var x = SearchRecipies(m);
         WriteSearchModel(x);
     }
-    protected void ItemsPerPage5_Click(object sender, EventArgs e)
+  /*  protected void ItemsPerPage5_Click(object sender, EventArgs e)
     {
         var m = ReadSearchModel();
         m.ItemsPerPage = 5;
         m.Page = 1;
         var x = SearchRecipies(m);
         WriteSearchModel(x);
-    }
+    }*/
     protected void ItemsPerPage10_Click(object sender, EventArgs e)
     {
         var m = ReadSearchModel();
